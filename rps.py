@@ -57,9 +57,9 @@ def rps():
         nonlocal game_count
         game_count += 1
 
-        print(f"\nGame count: {str(game_count)}")
-        print(f"\nPlayer wins: {str(player_wins)}")
-        print(f"\nPython wins: {str(python_wins)}")
+        print(f"\nGame count: {game_count}")
+        print(f"\nPlayer wins: {player_wins}")
+        print(f"\nPython wins: {python_wins}")
             
         print("\nPlay again?")
 
@@ -78,6 +78,8 @@ def rps():
 
     return play_rps
 
-play = rps()
 
-play()
+
+if __name__ == "__main__":
+    rock_paper_scissors = rps()
+    rock_paper_scissors()
